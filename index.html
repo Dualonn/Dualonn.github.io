@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dualonn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Dualonn-icon.png">
+</head>
+<body>
+    <div class="top-bar">
+        <div id="icon-dropdown">
+            <img src="Dualonn.png" class="dualonn-icon-small">
+            <div id="dropdown">
+                <div class ="link" id="home-link" onclick="pagehandler(this)">Home</div>
+                <div class = "link" id="contact-link" onclick="pagehandler(this)">Contact</div>
+                <div class = "link" id="info-link" onclick="pagehandler(this)">Info</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="home">
+        <div id="home-page-1">
+            <img id="dualonn-logo" src="Dualonn.png">
+            <p class="dualonn-text">Dualonn</p>
+        </div>
+        <div id="home-page-2">
+            <div id="img_carousel">
+                <img src="ava">
+            </div>
+            <p>Dualonn is a company that makes games, music and animations. <em>"I like to make things. Whether that is hardware or software. I have so many ideas, I can't even do them all."</em> - William Griffiths, Owner</p>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="page">
+            <h1>Contact us!</h1>
+            <form>
+                <input type="email" placeholder="input your email"><br>
+                <textarea id="message-box" type="text" placeholder="write a message..."></textarea><br>
+                <button>submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="info">
+        <div class="page">
+            <h1>nothing to show here...</h1>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
