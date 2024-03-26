@@ -5,6 +5,16 @@ function pagehandler(trigger){
     })
 }
 
+function scroll(){
+    console.log(document.getElementById("img-carousel").scrollLeft)
+    document.getElementById("img-carousel").scrollLeft += 1.5
+    if(document.getElementById("img-carousel").scrollLeft > ((document.getElementById("img-carousel").children.length - 1) * 1100) - 1){
+        document.getElementById("img-carousel").scrollLeft = 0
+    }
+}
+
+setInterval(scroll, 10)
+
 // function pagehandler(trigger, newshow){
 //     let thisid = trigger.id;
 //     let divs = document.getElementsByClassName("show")
