@@ -166,19 +166,19 @@ body{
     font-size: 20px;
     user-select: none;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
     #dualonn-logo{
-        height: 20%;
+        height: 30%;
     }
     .dualonn-text{
-        font-size: 60px;
-        top: 750px;
+        font-size: 80px;
+        top: 600px;
     }
     #img-carousel{
-        width: 600px;
+        width: 750px;
         height: 400px;
     }
     .top-bar{
-        height: 3%;
+        height: 4%;
     }
 }
