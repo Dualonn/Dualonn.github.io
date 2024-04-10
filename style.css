@@ -28,21 +28,29 @@ body{
     display: flex;
 }
 
-#icon-dropdown .link{
-    padding: 8px;
+#dropdown .link{
+    padding: 0px;
     display: flex;
-    text-decoration: none;
     color: black;
     min-width: 100px;
     background-color: rgb(255, 255, 255);
     border-style: none;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
     user-select: none;
+    height: 0;
+    transition-duration: 1s;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    box-sizing: border-box;
+    border-left: solid black;
+    border-right: solid black;
+    border-width: 0;
 }
 
-#icon-dropdown #dropdown:last-child{
-    border-bottom: 2px solid black;
+#dropdown .link p{
+    display: none;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #icon-dropdown .link:hover{
@@ -52,15 +60,28 @@ body{
 #icon-dropdown:hover{
     #dropdown{
         display: flex;
+        left: 5px;
+    }
+    #dropdown .link{
+        transition-duration: 1s;
+        height: 10px;
+        padding: 18px;
+        border-width:1px;
+    }
+    #dropdown .link p{
+        display: flex;
+    }
+    #dropdown:last-child{
+        border-bottom: 2px solid black;
     }
 }
 
 #dropdown{
-    display:none;
+    left:5px;
+    position: relative;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left:10px;
 }
 
 #home-page-1{
@@ -84,6 +105,7 @@ body{
     position: relative;
     height: 50%;
     bottom: 10%;
+    animation: flow 6s ease infinite;
 }
 
 .dualonn-text{
@@ -183,5 +205,18 @@ body{
     }
     .dualonn-icon-small{
         height: 100px;
+        margin-top: 5px;
+    }
+}
+
+@keyframes flow{
+    0%{
+        height: 45%;
+    }
+    50%{
+        height: 50%;
+    }
+    100%{
+        height: 45%;
     }
 }
