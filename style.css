@@ -167,7 +167,7 @@ body{
     width: 100%;
     height: 100%;
 }
-#projects_button{
+#projects-button{
     display: flex;
     position: relative;
     left: 3%;
@@ -181,12 +181,52 @@ body{
     border-style: solid;
     border-top: 0px;
 }
-#projects_button:hover{
+#projects-button:hover{
     background-color: rgb(243, 243, 243);
 }
-#projects_button p{
+#projects-button p{
     font-size: 20px;
     user-select: none;
+}
+.page2{
+    position: relative;
+    display:none;
+    top: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page2 h1{
+    font-size: 75px;
+    color: rgb(0,200,0)
+}
+.page2 p{
+    font-size: 25px;
+}
+.page3{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 350px;
+}
+#projects{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-image:url("lines.jpg");
+}
+.preview-img{
+    height: 250px;
+    transition-duration: 1s;
+} .preview-img:hover{
+    height: 275px;
+}
+.preview{
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
 }
 @media screen and (max-width: 1700px) {
     #dualonn-logo{
@@ -207,6 +247,21 @@ body{
         height: 100px;
         margin-top: 5px;
     }
+}
+#info p{
+    position: relative;
+    top: 75px;
+    margin-left: 20px;
+    font-family: Arial;
+    font-size: 30px;
+}
+#me{
+    position: relative;
+    left: 42%;
+    top: 50px;
+}
+#me img{
+    height: 300px;
 }
 
 @keyframes flow{
