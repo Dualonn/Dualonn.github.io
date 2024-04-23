@@ -2,10 +2,13 @@
     --width: 100%;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     margin: 0;
-    width: 99.1vw;
-    height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -107,7 +110,7 @@ body{
 
 #dualonn-logo{
     position: relative;
-    height: 50%;
+    width: 80%;
     bottom: 10%;
     animation: flow 6s ease infinite;
 }
@@ -115,7 +118,7 @@ body{
 .dualonn-text{
     position: absolute;
     font-size: 100px;
-    top: 600px;
+    top: 700px;
 }
 
 #home-page-2{
@@ -132,6 +135,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+#home p{
+    margin-left: 15px;
+}
 #contact{
     height: 100%;
     width: 100%;
@@ -146,6 +152,9 @@ body{
 }
 .page{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #message-box{
     height: 300px;
@@ -171,7 +180,7 @@ body{
     width: 100%;
     height: 100%;
 }
-#projects-button{
+.bar-button{
     display: flex;
     position: relative;
     left: 3%;
@@ -185,10 +194,10 @@ body{
     border-style: solid;
     border-top: 0px;
 }
-#projects-button:hover{
+.bar-button:hover{
     background-color: rgb(243, 243, 243);
 }
-#projects-button p{
+.bar-button p{
     font-size: 20px;
     user-select: none;
 }
@@ -211,7 +220,7 @@ body{
     margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 350px;
+    column-gap: 200px;
 }
 #projects{
     display: none;
@@ -219,12 +228,13 @@ body{
     height: 100%;
     justify-content: center;
     background-image:url("lines.jpg");
+    background-repeat: repeat;
 }
 .preview-img{
-    height: 250px;
+    width: 100%;
     transition-duration: 1s;
 } .preview-img:hover{
-    height: 275px;
+    width: 110%;
 }
 .preview{
     width: 500px;
@@ -232,24 +242,31 @@ body{
     justify-content: center;
     text-wrap: wrap;
 }
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1200px) {
     #dualonn-logo{
-        height: 35%;
+        animation: none;
+        width: 80%;
     }
     .dualonn-text{
-        font-size: 120px;
-        top: 1200px;
+        font-size: 60px;
+        top: 55%;
     }
     #img-carousel{
-        width: 1550px;
-        height: 900px;
+        width: 80%;
+        height: 400px;
     }
     .top-bar{
         height: 5%;
     }
-    .dualonn-icon-small{
-        height: 100px;
-        margin-top: 5px;
+    .page3{
+        gap: 100px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .preview-img{
+        width: 500px;
+    }
+    #message-box{
+        width: 200%;
     }
 }
 #info p{
@@ -260,22 +277,44 @@ body{
     font-size: 30px;
 }
 #me{
+    display: flex;
     position: relative;
-    left: 42%;
     top: 50px;
+    width: 300px;
 }
 #me img{
     height: 300px;
+    justify-self: center;
+}
+
+#plans{
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+.page4{
+    display:flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.page4 div{
+    display:flex;
+}
+.page4 p{
+    font-size: 30px;
+    margin-left: 20px;
 }
 
 @keyframes flow{
     0%{
-        height: 45%;
+        width: 75%;
     }
     50%{
-        height: 50%;
+        width: 70%;
     }
     100%{
-        height: 45%;
+        width: 75%;
     }
 }
