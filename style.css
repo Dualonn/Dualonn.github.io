@@ -18,6 +18,7 @@ body{
     background-color: rgb(255, 255, 255);
     position: fixed;
     z-index: 1;
+    align-items: center;
 }
 
 #icon-dropdown{
@@ -78,6 +79,7 @@ body{
 
 #dropdown{
     left:5px;
+    bottom: 20px;
     position: relative;
     flex-wrap: wrap;
     align-items: center;
@@ -97,8 +99,10 @@ body{
 }
 
 .dualonn-icon-small{
+    position: relative;
     height: 45px;
     margin-left:10px;
+    bottom: 20px;
 }
 
 #dualonn-logo{
