@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dualonn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Dualonn-icon.png">
+</head>
+<body>
+    <div class="top-bar">
+        <div id="icon-dropdown">
+            <img src="Dualonn.png" class="dualonn-icon-small">
+            <div id="dropdown">
+                <div class ="link" id="home-link" onclick="pagehandler(this)"><p>Home</p></div>
+                <div class = "link" id="contact-link" onclick="pagehandler(this)"><p>Contact</p></div>
+                <div class = "link" id="info-link" onclick="pagehandler(this)"><p>Info</p></div>
+            </div>
+        </div>
+        <div class="bar-button" id="projects-" onclick="pagehandler(this)"><p>Projects</p></div>
+        <div class="bar-button" id="plans-" onclick="pagehandler(this)"><p>Plans</p></div>
+    </div>
+
+    <div id="home">
+        <div id="home-page-1">
+            <img id="dualonn-logo" src="Dualonn.png">
+            <p class="dualonn-text">Dualonn</p>
+        </div>
+        <div id="home-page-2">
+            <div id="img-carousel">
+                <img src="ava.gif" class="img-c">
+                <img src="textengine.png" class="img-c">
+                <img src="aos.png" class="img-c">
+                <img src="music.png" class="img-c">
+                <img src="ava.gif" class="img-c">
+            </div>
+            <p>Dualonn makes games, animations, and more. <em>"I like to make things. Whether that is hardware or software. I have so many ideas, I can't even do them all."</em> - William Griffiths, Owner</p>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="page">
+            <h1>Contact us!</h1>
+                <input type="email" placeholder="input your email"><br>
+                <textarea id="message-box" type="text" placeholder="write a message..."></textarea><br>
+                    <button id="thanks-null" onclick="pagehandler(this)">Submit</button>
+        </div>
+    </div>
+
+    <div class="page2" id="thanks">
+        <h1>Submitted!</h1>
+        <p>We look forward to reading your message!</p>
+    </div>
+
+    <div id="info">
+        <div class="page">
+            <div id="me"><img src="me.jpg"></div>
+            <p>My name is william griffiths. I am a developer and hobbyist. I like to progam games, and also fun demonstrations. I've been coding for about 10 years, and I started out and a beginner coding platform called scratch. Nowadays, I've been using Unity Engine and am looking into learning Unreal engine and C++<p>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="page3">
+                <div class="preview">
+                    <image class="preview-img" src="aos.png"></image>
+                    <p>This is a game I'm working on called "Age of Stickman" It's a Tower Defense / Civilization game.</p>
+                </div>
+                <div class="preview">
+                    <image class="preview-img" src="music.png"></image>
+                    <p>This song has no name yet, but it is going to be a synphonic and instrumental song.</p>
+                </div>
+                <div class="preview">
+                    <image class="preview-img" src="textengine.png"></image>
+                    <p>This type of thing, called a "Text-Engine" among the users of Scratch, is built in Javascript and is almost complete.</p>
+                </div>
+        </div>
+    </div>
+
+    <div id="plans">
+        <div class="page4">
+            <div>
+            <p>Some plans for the future include a game called "Jay's Adventure" based off of drawings and ideas by William.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
